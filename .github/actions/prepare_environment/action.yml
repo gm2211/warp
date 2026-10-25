@@ -129,7 +129,7 @@ runs:
     - name: Install Node
       uses: actions/setup-node@3235b876344d2a9aa001b8d1453c930bba69e610 # v3.9.1
       with:
-        node-version: 20.9.0
+        node-version: 22
 
     - name: Enable Corepack
       # Enables NodeJS's Corepack tool, which is necessary to use the right version of `yarn` to

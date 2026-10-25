@@ -59,9 +59,9 @@ RUN set -eux; \
       amd64) ARCH='x64';; \
       arm64) ARCH='arm64';; \
     esac; \
-    curl --proto '=https' --tlsv1.2 -fsSLO --compressed "https://nodejs.org/dist/v25.0.0/node-v25.0.0-linux-$ARCH.tar.xz"; \
-    tar -xJf node-v25.0.0-linux-$ARCH.tar.xz -C /usr/local --strip-components=1 --no-same-owner; \
-    rm node-v25.0.0-linux-$ARCH.tar.xz; \
+    curl --proto '=https' --tlsv1.2 -fsSLO --compressed "https://nodejs.org/dist/v24.22.1/node-v24.22.1-linux-$ARCH.tar.xz"; \
+    tar -xJf node-v24.22.1-linux-$ARCH.tar.xz -C /usr/local --strip-components=1 --no-same-owner; \
+    rm node-v24.22.1-linux-$ARCH.tar.xz; \
     ln -s /usr/local/bin/node /usr/local/bin/nodejs; \
     node --version; \
     npm --version; \
